@@ -23,3 +23,5 @@ jobs:
 
         - name: Unit Testing    #added Unit testing
           run: npm test         #added
+          env:
+            MONGO_URI: ${{ secrets.MONGO_URI }}
